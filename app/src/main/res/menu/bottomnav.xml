@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/browse"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/allsong"
+        android:icon="@drawable/allsong"
+        android:title="All Songs" />
+
+    <item
+        android:id="@+id/genre"
+        android:icon="@drawable/genre"
+        android:title="Genre" />
+    <item
+        android:id="@+id/search_menu"
+        android:icon="@drawable/search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/downloaded"
+        android:icon="@drawable/ic_baseline_cloud_download_24"
+        android:title="Offline" />
+
+
+</menu>

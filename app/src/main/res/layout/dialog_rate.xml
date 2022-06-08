@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350sp"
+    android:layout_height="match_parent"
+    android:background="#680326"
+    tools:viewBindingIgnore="true">
+
+    <EditText
+        android:id="@+id/et_post"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="16dp"
+        android:background="#2F2A33"
+        android:gravity="top"
+        android:hint="Write review ..."
+        android:lines="4"
+        android:padding="14sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_bar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        style="@style/MtButtonStyleorange"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:insetTop="0sp"
+        android:insetBottom="0sp"
+        android:text="Confirm"
+        android:textAllCaps="true"
+        android:textAppearance="@style/H4"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="#8C7E06"
+        app:cornerRadius="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_post"
+        app:layout_constraintStart_toStartOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Yellow.AppCompatRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1"
+        android:theme="@style/Yellow.AppCompatRatingBar"
+        app:layout_constraintEnd_toEndOf="@+id/et_post"
+        app:layout_constraintStart_toStartOf="@+id/et_post"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/et_post"
+        app:layout_constraintStart_toStartOf="@+id/et_post"
+        app:layout_constraintTop_toBottomOf="@+id/et_post">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/roboto"
+        android:text="Hi, Give us Feedback"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="That’s what we were hoping you’d say. The best praise you can give us is to share your opinion on the playstore "
+        android:textAlignment="viewStart"
+        android:textColor="@color/abu3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

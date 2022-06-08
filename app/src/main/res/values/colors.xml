@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FFFFFFFF</color>
+    <color name="secondary">#FFFFFFFF</color>
+    <color name="accent">#FF4060</color>
+    <color name="mainstatusbar">#00FFFFFF</color>
+    <color name="fulltransparent">#00121212</color>
+    <color name="trans10">#1AFFFFFF</color>
+    <color name="main">@color/black</color>
+    <color name="grey">#5B5B5B</color>
+    <color name="yellow">#FF9800</color>
+    <color name="transaparent10">#1AC4C4C4</color>
+
+    <color name="biru">#5FE6F1</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="merah">#F15043</color>
+    <color name="hijau">#27D466</color>
+    <color name="abu1">#D3D3D3</color>
+    <color name="abu2">#B7B7B7</color>
+    <color name="abu3">#D7D7D7</color>
+    <color name="abu4">#2D2D2D</color>
+    <color name="bottomnav">#41DADADA</color>
+
+
+    <color name="hitam1bg">#111011</color>
+    <color name="hitam2">#171717</color>
+    <color name="hitam3">#1E1E1E</color>
+    <color name="hitam4">#191932</color>
+    <color name="hitam5">#353538</color>
+    <color name="kuning">#FFB901</color>
+    <color name="ungu">#D03AF5</color>
+    <color name="ungu2">#130C32</color>
+    <color name="linesetting">#979797</color>
+    <color name="textcolour">#FAF9F9</color>
+    <color name="wavecolour">#D8D8D8</color>
+
+</resources>

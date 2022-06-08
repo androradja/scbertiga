@@ -1,0 +1,171 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IndraMusic" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/fulltransparent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+
+    <style name="AppTheme.TransparentTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/mainstatusbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorAccent">@color/accent</item>
+
+    </style>
+
+    <style name="AppTheme.TransparentTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+        <style name="MySearchview" parent="Widget.AppCompat.SearchView">
+            <item name="android:textColorHint">@color/abu3</item>
+            <item name="android:editTextColor">@android:color/black</item>
+            <item name="fontFamily">@font/adventpro</item>
+            <item name="android:textSize">14sp</item>
+
+        </style>
+
+    <style name="AppTheme.TransparentTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.TransparentTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.TransparentTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.TransparentTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimaryDark">@color/hitam1bg</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/hitam1bg</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.Slide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto</item>
+
+    </style>
+
+    <style name="Textbutton" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="lineSpacing">0sp</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="Yellow.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Indicator">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/fulltransparent</item>
+    </style>
+
+
+
+
+
+    <style name="DialogFragmentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="MtButtonStyleorange" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/OrangeButtonThemeOverlay</item>
+        <item name="lineSpacing">0sp</item>
+    </style>
+
+    <style name="OrangeButtonThemeOverlay">
+        <item name="lineSpacing">0sp</item>
+        <item name="colorPrimary">@color/accent</item>
+    </style>
+
+    <style name="GreyButtonThemeOverlay">
+        <item name="colorPrimary">@color/grey</item>
+    </style>
+
+
+    <style name="H1" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">32sp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+    <style name="H2" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">19sp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+    <style name="H3" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">15sp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+    <style name="H4" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">12sp</item>
+        <item name="maxLines">1</item>
+    </style>
+
+
+    <style name="H5" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">20sp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+    <style name="H6" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">20sp</item>
+        <item name="maxLines">1</item>
+
+    </style>
+
+
+</resources>

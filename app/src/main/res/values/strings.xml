@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Mp3Juice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="json">http://207.148.90.86/kasep/pisan.json</string>
+
+    <string-array name="genre">
+        <item>Alternative Rock</item>
+        <item>Ambient</item>
+        <item>Audiobooks</item>
+        <item>Business</item>
+        <item>Classical</item>
+        <item>Comedy</item>
+        <item>Country</item>
+        <item>Dance &amp; EDM</item>
+        <item>Dancehall</item>
+        <item>Deep House</item>
+        <item>Disco</item>
+        <item>Drum &amp; Bass</item>
+        <item>Dubstep</item>
+        <item>Electronic</item>
+        <item>Entertainment</item>
+        <item>Folk &amp; Singer-Songwriter</item>
+        <item>Hip Hop &amp; Rap</item>
+        <item>House</item>
+        <item>Indie</item>
+        <item>Jazz &amp; Blues</item>
+        <item>Latin</item>
+        <item>Learning</item>
+        <item>Metal</item>
+        <item>News &amp; Politics</item>
+        <item>Piano</item>
+        <item>Pop</item>
+        <item>R&amp;B &amp; Soul</item>
+        <item>Reggae</item>
+        <item>Reggaeton</item>
+        <item>Religion &amp; Spirituality</item>
+        <item>Rock</item>
+        <item>Science</item>
+        <item>Soundtrack</item>
+        <item>Sports</item>
+        <item>Storytelling</item>
+        <item>Techno</item>
+        <item>Technology</item>
+        <item>Trance</item>
+        <item>Trap</item>
+        <item>Trending Audio</item>
+        <item>Trending Music</item>
+        <item>Trip Hop</item>
+        <item>World</item>
+
+    </string-array>
+</resources>

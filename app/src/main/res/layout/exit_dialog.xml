@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="#680326"
+        android:orientation="vertical"
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:fontFamily="@font/roboto"
+            android:text="Thankyou"
+            android:textColor="@android:color/white"
+            android:textFontWeight="700"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/roboto"
+            android:text="Are you sure want to exit ?"
+            android:textColor="@android:color/white"
+            android:textFontWeight="400"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputplaylist"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="5sp"
+            android:gravity="right">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_action"
+                style="@style/MtButtonStyleorange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10sp"
+                android:fontFamily="@font/adventpro"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="14sp"
+                app:backgroundTint="#071877" />
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:fontFamily="@font/adventpro"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textFontWeight="700"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
