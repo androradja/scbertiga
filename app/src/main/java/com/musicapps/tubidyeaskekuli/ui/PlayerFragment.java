@@ -78,9 +78,6 @@ public class PlayerFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            songModel = getArguments().getParcelable(ARG_PARAM1);
-        }
         context = getContext();
     }
 
@@ -151,6 +148,7 @@ public class PlayerFragment extends Fragment {
                 binding.progressBar.setVisibility(View.INVISIBLE);
                 binding.play.setVisibility(View.VISIBLE);
                 binding.play.setImageResource(R.drawable.ic_pause);
+                updateinfo(currentSongModel);
 
             }
 
@@ -168,7 +166,6 @@ public class PlayerFragment extends Fragment {
             public void onPrepare() {
                 binding.progressBar.setVisibility(View.VISIBLE);
                 binding.play.setVisibility(View.INVISIBLE);
-                updateinfo(currentSongModel);
             }
 
             @Override
@@ -272,13 +269,18 @@ public class PlayerFragment extends Fragment {
         binding.download.setOnClickListener(new OnSingleClickListener() {
             @Override
             public void onSingleClick(View v) {
+
+                if (currentSongModel!=null){
+
                 RealmHelper realmHelper= new RealmHelper(getActivity());
-                if (realmHelper.checkisDownloaded(songModel.getId())){
-                    Toast.makeText(context,songModel.getTitle()+"Has downloaded",Toast.LENGTH_LONG).show();
+                if (realmHelper.checkisDownloaded(currentSongModel.getId())){
+                    Toast.makeText(context,currentSongModel.getTitle()+"Has downloaded",Toast.LENGTH_LONG).show();
 
                 }
-                else Dialog.DownloadSongs(songModel,getActivity());
+                else Dialog.DownloadSongs(currentSongModel,getActivity());
 
+                }
+                else   Toast.makeText(context,"Please Wait, Song not available",Toast.LENGTH_LONG).show();
 
             }
         });

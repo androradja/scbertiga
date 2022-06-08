@@ -18,6 +18,7 @@ public class Route {
     }
 
     public static boolean gotofragmentPlayer(FragmentManager fragmentManager, Fragment fragment ) {
+
         fragmentManager.beginTransaction()
                 .setCustomAnimations(R.anim.slide_up, R.anim.exit, R.anim.pop_enter, R.anim.slide_down)
                 .add(R.id.frameplayer, fragment)
